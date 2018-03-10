@@ -43,48 +43,213 @@
                 line-height:12px;
             }
 			.custom-avatar {
-  height: 12vw;
-  width: 12vw;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-}
+			  height: 12vw;
+			  width: 12vw;
+			  border: 1px solid #fff;
+			  border-radius: 50%;
+			  display: inline-block;
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+
+
+			.glyphicon { margin-right:5px; }
+			.thumbnail
+			{
+			    margin-bottom: 20px;
+			    padding: 0px;
+			    -webkit-border-radius: 0px;
+			    -moz-border-radius: 0px;
+			    border-radius: 0px;
+			}
+			
+			.item.list-group-item
+			{
+			    float: none;
+			    width: 100%;
+			    background-color: #fff;
+			    margin-bottom: 10px;
+			}
+			.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover
+			{
+			    background: #428bca;
+			}
+			
+			.item.list-group-item .list-group-image
+			{
+			    margin-right: 10px;
+			}
+			.item.list-group-item .thumbnail
+			{
+			    margin-bottom: 0px;
+			}
+			.item.list-group-item .caption
+			{
+			    padding: 4px 4px 4px 4px;
+			}
+			.item.list-group-item:nth-of-type(odd)
+			{
+			    background: #eeeeee;
+			}
+			
+			.item.list-group-item:before, .item.list-group-item:after
+			{
+			    display: table;
+			    content: " ";
+			}
+			
+			.item.list-group-item img
+			{
+			    float: left;
+			}
+			.item.list-group-item:after
+			{
+			    clear: both;
+			}
+			.list-group-item-text
+			{
+			    margin: 0 0 11px;
+			}
+			
         </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Custom styles for this template -->
     </head>
     <body>
+    <!--Navbar-->
+		  <!-- Navigation -->
+		    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+		      <div class="container bg-primary">
+		        <h2><i>Eye</i> Wear</h2>
+		      </div>
+		    </nav>
+
+        <div class="container">
+        	<div class="row">
+        		
+        	  <div class="col-sm-8">
+        	  		<div id="tryon">
+			            <video id="camera" loop></video>
+			            <canvas id="overlay"></canvas>
+			        </div>
+			        <div>
+			        	<button class="btn btn-success" id="start">   Start   </button>
+			        </div>
+			        
+        	  </div>
+        	  <div class="col-sm-4">
+				    <div id="products" id="ddleft" class="row list-group" style="height:650px; overflow: auto;">
+				        <div class="item  col-xs-4 col-lg-4">
+				            <div class="thumbnail">
+				                <img src="./glasses/test1.png" style="cursor:pointer;" class="group list-group-image"/>
+				                <div class="caption">
+				                    <h4 class="group inner list-group-item-heading">
+				                        Product title</h4>
+				                    <p class="group inner list-group-item-text">
+				                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+				                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				                    <div class="row">
+				                        <div class="col-xs-12 col-md-6">
+				                            <p class="lead">
+				                                &#8377 2100.00</p>
+				                        </div>
+				                        <div class="col-xs-12 col-md-6">
+				                            <a class="btn btn-success" href="#">Add to cart</a>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="item  col-xs-4 col-lg-4">
+				            <div class="thumbnail">
+				                <img src="./glasses/test2.png" style="cursor:pointer;" class="group list-group-image"/>
+				                <div class="caption">
+				                    <h4 class="group inner list-group-item-heading">
+				                        Product title</h4>
+				                    <p class="group inner list-group-item-text">
+				                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+				                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				                    <div class="row">
+				                        <div class="col-xs-12 col-md-6">
+				                            <p class="lead">
+				                                &#8377 1999.00</p>
+				                        </div>
+				                        <div class="col-xs-12 col-md-6">
+				                            <a class="btn btn-success" href="#">Add to cart</a>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="item  col-xs-4 col-lg-4">
+				            <div class="thumbnail">
+				                <img src="./glasses/test3.png" style="cursor:pointer;" class="group list-group-image"/>
+				                <div class="caption">
+				                    <h4 class="group inner list-group-item-heading">
+				                        Product title</h4>
+				                    <p class="group inner list-group-item-text">
+				                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+				                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				                    <div class="row">
+				                        <div class="col-xs-12 col-md-6">
+				                            <p class="lead">
+				                                &#8377 1499.00</p>
+				                        </div>
+				                        <div class="col-xs-12 col-md-6">
+				                            <a class="btn btn-success" href="#">Add to cart</a>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="item  col-xs-4 col-lg-4">
+				            <div class="thumbnail">
+				                <img src="./glasses/test4.png" style="cursor:pointer;" class="group list-group-image"/>	
+				                <div class="caption">
+				                    <h4 class="group inner list-group-item-heading">
+				                        Product title</h4>
+				                    <p class="group inner list-group-item-text">
+				                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+				                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				                    <div class="row">
+				                        <div class="col-xs-12 col-md-6">
+				                            <p class="lead">
+				                                &#8377 1299.00</p>
+				                        </div>
+				                        <div class="col-xs-12 col-md-6">
+				                            <a class="btn btn-success" href="#">Add to cart</a>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+        	  </div>
+        	  
+        	</div>
+        </div>
+
+        <div id="debug"></div>
+        
         <!-- jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- three.js r54 -->
         <script src="js/three.js"></script>
         <!-- clmtrack -->
         <script src="js/utils.js"></script>
-        <script src="js/clmtrackr.js"></script>
-		<table>
-		 <tr>
-		    <td width="20%"> 
-			 <div  id="ddleft">						
-			   <img src="./glasses/test1.png" class="custom-avatar"/>
-			   <img src="./glasses/test2.png" class="custom-avatar"/>
-			   <img src="./glasses/test3.png" class="custom-avatar"/>
-			   <img src="./glasses/test4.png" class="custom-avatar"/>			   
-			   
-			   
-			 </div> 
-			</td>
-			<td width="80%" > <div id="tryon">
-            <video id="camera" loop></video>
-            <canvas id="overlay"></canvas>
-        </div></td>
-		 </tr>
-		</table>
-        
-		
-        <button id="start">Start</button>
-        <div id="debug"></div>
-
+        <script src="js/clmtrackr.js"></script>		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Custom JavaScript for this theme -->
         <script>
+        
+        $(document).ready(function() {
+        	$('#products .item').addClass('list-group-item');
+        	/*$('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});*/
+            /*$('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});*/
+        });
+        
          var _image =null; 
             /**
              * Requires:
