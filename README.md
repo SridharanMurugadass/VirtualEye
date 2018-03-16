@@ -1,0 +1,3 @@
+# VirtualEye
+
+Augmented reality is the next generation model. from which a small poc has been done here its virtual trail room for the optical world...
